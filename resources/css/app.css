@@ -1,0 +1,141 @@
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f3f4f6; /* bg-gray-100 */
+    color: #374151; /* text-gray-600 */
+    margin: 0;
+    padding: 0;
+}
+
+/* Sidebar styles */
+aside {
+    background-color: #ffffff; /* bg-white */
+    border-right: 1px solid #e5e7eb; /* border-gray-200 */
+}
+
+aside h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #374151; /* text-gray-700 */
+}
+
+aside nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+aside nav li {
+    margin: 0.5rem 0;
+}
+
+aside nav a {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+aside nav a:hover {
+    background-color: #f3f4f6; /* hover:bg-gray-100 */
+}
+
+aside nav a.active {
+    background-color: #3b82f6; /* bg-blue-500 */
+    color: #ffffff; /* text-white */
+}
+
+/* Header styles */
+header {
+    background-color: #ffffff; /* bg-white */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 1rem 0;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .container form button {
+    background-color: #ef4444; /* bg-red-600 */
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem; /* text-sm */
+    color: #ffffff; /* text-white */
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+header .container form button:hover {
+    background-color: #dc2626; /* hover:bg-red-700 */
+}
+
+/* Flash messages */
+.flash-message {
+    padding: 1rem 1.5rem;
+    border-radius: 0.5rem;
+    margin: 1rem;
+}
+
+.flash-message.success {
+    background-color: #d1fae5; /* bg-green-100 */
+    color: #065f46; /* text-green-700 */
+}
+
+.flash-message.error {
+    background-color: #fee2e2; /* bg-red-100 */
+    color: #b91c1c; /* text-red-700 */
+}
+
+/* Main content */
+main {
+    padding: 1rem 1.5rem;
+    overflow-y: auto;
+}
+
+/* Utilities */
+.hidden {
+    display: none;
+}
+
+.z-10 {
+    z-index: 10;
+}
+
+.z-20 {
+    z-index: 20;
+}
+
+.flex {
+    display: flex;
+}
+
+.h-screen {
+    height: 100vh;
+}
+
+.overflow-y-auto {
+    overflow-y: auto;
+}
+
+.rounded-lg {
+    border-radius: 0.5rem;
+}
+
+.text-sm {
+    font-size: 0.875rem;
+}
+
+.header-user {
+    display: flex;
+    flex-direction: column; /* Ubah menjadi kolom */
+    align-items: center; /* Tengahkan secara horizontal */
+    text-align: center; /* Pusatkan teks */
+    gap: 0.5rem; /* Jarak antara elemen */
+}
+
