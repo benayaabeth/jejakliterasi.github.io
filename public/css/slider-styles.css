@@ -1,0 +1,43 @@
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+.slides, .slides2, .slides3 {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.book-slide {
+    min-width: 200px;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.book-card {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    z-index: 1;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}

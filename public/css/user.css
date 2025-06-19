@@ -1,0 +1,1805 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav form {
+    display: flex;
+    margin-right: 20px;
+}
+
+nav form input[type="text"] {
+    padding: 5px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+}
+
+nav form button {
+    padding: 5px;
+    background-color: #555;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    display: block;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    border-radius: 4px;
+}
+
+/* Profil Akun */
+.profile {
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profile-wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.profile-photo img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ddd;
+}
+
+.profile-form {
+    flex: 1;
+}
+
+.profile-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.profile-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Tombol simpan yang lebih bagus */
+
+/* Opsi Tambahan */
+.profile-options {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.profile-options ul {
+    list-style: none;
+    padding: 0;
+}
+
+.profile-options li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.profile-options a {
+    text-decoration: none;
+    color: #007BFF;
+    font-size: 16px;
+}
+
+.profile-options a:hover {
+    text-decoration: underline;
+}
+
+
+/* Dropdown Menu */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.dropdown-content a {
+    color: #333;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.books .container {
+    display: block; /* Agar semua section tersusun ke bawah */
+}
+
+
+/* CTA Button */
+.cta-button {
+    background: #ffcc00;
+    color: #333;
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.cta-button:hover {
+    background: #e6b800;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #f8f5f0; /* Warna latar belakang lembut */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 20px; /* Kurangi padding agar lebih compact */
+    height: auto; /* Sesuaikan tinggi dengan konten */
+}
+
+/* Styling Text */
+.hero-content {
+    flex: 1;
+    text-align: left;
+    padding-right: 30px; /* Kurangi padding agar lebih pas */
+}
+
+.hero-content h1 {
+    font-size: 2.5rem; /* Kurangi ukuran font */
+}
+
+.hero-content p {
+    font-size: 1.1rem; /* Sedikit perkecil teks */
+    max-width: 450px; /* Persempit area teks */
+}
+
+/* Styling Gambar */
+.hero-image img {
+    max-width: 350px; /* Perkecil ukuran gambar */
+    width: 100%;
+}
+
+
+
+
+/* Daftar Buku */
+.book-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.book-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.book-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.book-title {
+    font-size: 16px;
+    margin: 10px 0;
+    color: #333;
+}
+
+/* Buku Populer */
+.popular-books-section {
+    margin-top: 40px;
+}
+
+.popular-books-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.book-slide {
+    min-width: 20%; /* 1 baris 5 buku */
+    text-align: center;
+    padding: 10px;
+}
+
+.book-slide img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.book-slide .book-title {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Buku terbaru */
+.latest-books-section {
+    margin-top: 40px;
+}
+
+.latest-books-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slides2 {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.book-slide {
+    min-width: 20%; /* 1 baris 5 buku */
+    text-align: center;
+    padding: 10px;
+}
+
+.book-slide img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.book-slide .book-title {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Buku random */
+.random-books-section {
+    margin-top: 40px;
+}
+
+.random-books-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slides3 {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.book-slide {
+    min-width: 20%; /* 1 baris 5 buku */
+    text-align: center;
+    padding: 10px;
+}
+
+.book-slide img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.book-slide .book-title {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Sub Header Kategori */
+.sub-header {
+    margin-bottom: 20px;
+}
+
+.sub-header ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    padding: 0;
+}
+
+.sub-header ul li a {
+    text-decoration: none;
+    padding: 5px 10px;
+    background-color: #ddd;
+    color: #333;
+    border-radius: 4px;
+}
+
+.sub-header ul li a:hover {
+    background-color: #ccc;
+}
+
+/* Grid Buku di Kategori */
+.book-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.book-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    width: 200px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.book-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.book-card .book-title {
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* semua buku kategori */
+
+.kategori-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.kategori-header a.lihat-semua {
+    text-decoration: none;
+    color: #007BFF;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.kategori-header a.lihat-semua:hover {
+    text-decoration: underline;
+}
+
+/* Dropdown Menu untuk User */
+.user-dropdown {
+    position: relative;
+}
+
+.user-dropdown .user-menu {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    display: block;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.user-dropdown .user-menu:hover {
+    background-color: #555;
+}
+
+.user-dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%; /* Agar muncul di bawah menu */
+    right: 0; /* Menu muncul di sisi kanan */
+    background-color: #b5b5b5;
+    min-width: 200px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    overflow: hidden;
+    z-index: 1000; /* Pastikan di atas elemen lain */
+}
+
+.user-dropdown-content li {
+    list-style: none;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.user-dropdown-content li:last-child {
+    border-bottom: none; /* Hilangkan border pada elemen terakhir */
+}
+
+.user-dropdown-content a {
+    color: #333;
+    text-decoration: none;
+    display: block;
+    padding: 10px 15px;
+}
+
+.user-dropdown-content a:hover {
+    background-color: #f5f5f5;
+}
+
+/* Hover Effect */
+.user-dropdown:hover .user-dropdown-content {
+    display: block;
+}
+
+/* Cart.php */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+table th {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+table td img {
+    width: 50px;
+    height: auto;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+a {
+    color: #dc3545;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+/* Styling untuk form pencarian di header */
+/* nav form {
+    display: flex;
+    align-items: center;
+}
+
+nav form input[type="text"] {
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+nav form button {
+    padding: 8px;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav form button img {
+    width: 16px;
+    height: 16px;
+} */
+
+/* Optional: Styling untuk placeholder input */
+/* nav form input[type="text"]::placeholder {
+    color: #999;
+    font-size: 14px;
+}
+
+.suggestions-box {
+    position: absolute;
+    background: #fff;
+    border: 1px solid #ddd;
+    width: calc(100% - 42px);
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 999;
+}
+
+.suggestions-box div {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.suggestions-box div:hover {
+    background: #f0f0f0;
+} */
+
+/* Search Wrapper */
+.search-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-wrapper input {
+    width: 300px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    font-size: 14px;
+}
+
+.search-wrapper button {
+    background-color: #555;
+    border: none;
+    padding: 8px 10px;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+.search-wrapper button img {
+    width: 16px;
+    height: 16px;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Suggestions Box */
+.suggestions-box {
+    position: absolute; /* Posisikan elemen secara absolut */
+    top: 100%; /* Tempatkan tepat di bawah input */
+    left: 0; /* Mulai dari kiri elemen parent */
+    width: 100%; /* Sama lebar dengan input */
+    background-color: #fff; /* Warna latar putih */
+    border: 1px solid #ddd; /* Tambahkan border tipis */
+    border-top: none; /* Hilangkan border atas */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* Bayangan lembut */
+    z-index: 999; /* Pastikan muncul di atas elemen lain */
+    max-height: 200px; /* Batas tinggi box */
+    overflow-y: auto; /* Scroll jika konten lebih dari batas tinggi */
+}
+
+.suggestions-box div {
+    padding: 10px;
+    cursor: pointer;
+    color: #333; /* Warna teks */
+}
+
+.suggestions-box div:hover {
+    background-color: #f1f1f1; /* Warna latar saat hover */
+}
+
+.suggestions-box a {
+    display: block;
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+    border-bottom: 1px solid #eee;
+}
+
+.suggestions-box a:hover {
+    background-color: #f5f5f5;
+    color: #007BFF;
+}
+
+
+/* Page Title Styling */
+.page-title {
+    text-align: center;
+    background-color: #f1f1f1;
+    padding: 15px 0;
+    margin-top: 10px;
+    border-bottom: 2px solid #ddd;
+}
+
+.page-title h2 {
+    margin: 0;
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Tombol Navigasi */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 50%;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Styling untuk section transactions */
+.transactions {
+    padding: 40px 0;
+    background-color: #f7f7f7;
+}
+
+.transactions h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+
+.transaction-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.transaction-table th, 
+.transaction-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.transaction-table th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+    color: #333;
+}
+
+.transaction-table tbody tr:hover {
+    background-color: #f5f5f5;
+}
+
+.status-badge {
+    display: inline-block;
+    padding: 5px 12px;
+    border-radius: 15px;
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+.status-pending {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.status-selesai {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.detail-table {
+    width: 100%;
+    margin: 10px 0;
+    border-collapse: collapse;
+}
+
+.detail-table th,
+.detail-table td {
+    padding: 8px 10px;
+    border: 1px solid #e0e0e0;
+}
+
+.detail-table th {
+    background-color: #f8f9fa;
+}
+
+/* Responsive styling */
+@media screen and (max-width: 768px) {
+    .transaction-table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
+
+.download-btn {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.download-btn:hover {
+    background-color: #45a049;
+}
+
+/* Auth Forms */
+.auth-form {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.auth-form h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.auth-form .form-group {
+    margin-bottom: 20px;
+}
+
+.auth-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: 500;
+}
+
+.auth-form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.auth-form input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(0,123,255,0.25);
+}
+
+.auth-form button {
+    width: 100%;
+    padding: 12px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.auth-form button:hover {
+    background: #0056b3;
+}
+
+.auth-form .error {
+    color: #dc3545;
+    font-size: 14px;
+    margin-top: 5px;
+    display: block;
+}
+
+.auth-form p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+
+.auth-form a:hover {
+    text-decoration: underline;
+}
+
+/* Alert Messages */
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.alert-success {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+
+.alert-danger {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+/* Pagination Container */
+.pagination-container {
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Showing Results Text */
+.showing-results {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 15px; /* Tambah margin bottom */
+}
+
+/* Pagination List */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 5px;
+}
+
+.pagination li {
+    margin: 0;
+}
+
+/* Pagination Links */
+.pagination li a,
+.pagination li span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 35px;
+    height: 35px;
+    padding: 0 12px;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    color: #007bff;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+/* Active State */
+.pagination li.active span {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+/* Hover State */
+.pagination li a:hover {
+    background-color: #e9ecef;
+    text-decoration: none;
+}
+
+/* Disabled State */
+.pagination li.disabled span {
+    color: #6c757d;
+    pointer-events: none;
+    background-color: #fff;
+    border-color: #dee2e6;
+}
+
+/* Loading Spinner */
+.loading-spinner {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+}
+
+.loading-spinner:after {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 3px solid #007bff;
+    border-top-color: transparent;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Responsive Improvements */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .auth-form {
+        margin: 20px 10px;
+        padding: 20px;
+    }
+
+    .book-card {
+        width: calc(50% - 20px);
+    }
+
+    .book-grid {
+        gap: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .dropdown-content {
+        position: static;
+        box-shadow: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .book-card {
+        width: 100%;
+    }
+
+    .search-wrapper input {
+        width: 200px;
+    }
+}
+
+.error-page {
+    text-align: center;
+    padding: 100px 0;
+}
+
+.error-page h1 {
+    font-size: 120px;
+    margin: 0;
+    color: #dc3545;
+}
+
+.error-page h2 {
+    font-size: 36px;
+    margin: 20px 0;
+    color: #333;
+}
+
+.error-page p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.error-page .btn-primary {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.error-page .btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    background-color: #d8c2b1; /* Light mode background */
+    color: #ffffff; /* Light mode text */
+    padding: 15px 0;
+    position: relative;
+}
+
+header.dark-mode {
+    background-color: #2d2d2d; /* Dark mode background */
+    color: #ffffff; /* Dark mode text */
+}
+
+.logo h1 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.search-wrapper {
+    display: flex;
+    align-items: center;
+    background-color: #f5ebe4; /* Light mode input */
+    border-radius: 20px;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+
+.search-wrapper.dark-mode {
+    background-color: #3a3a3a; /* Dark mode input */
+}
+
+.search-wrapper input {
+    border: none;
+    background: none;
+    outline: none;
+    color: #8b6f63; /* Light mode placeholder */
+    font-size: 1rem;
+    width: 200px;
+}
+
+search-wrapper.dark-mode input {
+    color: #c9c9c9; /* Dark mode placeholder */
+}
+
+.search-wrapper button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.search-wrapper img {
+    width: 20px;
+    height: 20px;
+}
+
+ul.menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+ul.menu li {
+    margin: 0 15px;
+}
+
+ul.menu a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+
+ul.menu a:hover {
+    color: #8b6f63; /* Hover effect */
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #b5b5b5;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+footer {
+    text-align: center;
+    background-color: #d8c2b1;
+    color: #ffffff;
+    padding: 10px 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+footer.dark-mode {
+    background-color: #2d2d2d;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Main harus fleksibel agar footer tetap di bawah */
+main {
+    flex: 1;
+}
+
+/* Footer tetap di bawah */
+footer {
+    width: 100%;
+    text-align: center;
+    color: white;
+    padding: 15px 0;
+}
+
+/* Dark mode toggle button */
+.dark-mode-toggle {
+    background-color: #8b6f63;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s;
+}
+
+.dark-mode-toggle:hover {
+    background-color: #6e5449;
+}
+
+.auth-toggle {
+    display: flex;
+    background-color: #f0e4da;
+    border-radius: 25px;
+    overflow: hidden;
+    width: 150px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.auth-option {
+    flex: 1;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    color: #8c7051;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.auth-option.active {
+    background-color: #ffffff;
+    color: #8c7051;
+    font-weight: bold;
+}
+/* Orders Styles */
+.transactions {
+    padding: 40px 0;
+    background-color: #f7f7f7;
+    min-height: calc(100vh - 200px);
+    transition: background-color 0.3s ease;
+}
+
+.dark-mode .transactions {
+    background-color: #1a1a1a;
+}
+
+.card.order-item {
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.dark-mode .card.order-item {
+    background: #2d2d2d;
+    border-color: #404040;
+}
+
+.card.order-item .card-header {
+    background: #f8f9fa;
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid #eee;
+    transition: background-color 0.3s ease;
+}
+
+.dark-mode .card.order-item .card-header {
+    background: #333333;
+    border-color: #404040;
+    color: #e5e7eb;
+}
+
+.card.order-item .card-body {
+    padding: 1.5rem;
+}
+
+.transaction-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+}
+
+.transaction-table th,
+.transaction-table td {
+    padding: 1rem;
+    text-align: left;
+    vertical-align: middle;
+    border-bottom: 1px solid #eee;
+    transition: border-color 0.3s ease;
+}
+
+.dark-mode .transaction-table th,
+.dark-mode .transaction-table td {
+    border-color: #404040;
+    color: #e5e7eb;
+}
+
+.transaction-table th {
+    font-weight: 600;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.dark-mode .transaction-table th {
+    background-color: #333333;
+    color: #e5e7eb;
+}
+
+.book-thumbnail {
+    width: 80px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.status-badge {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.status-pending {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.status-verified {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.status-selesai {
+    background-color: #cce5ff;
+    color: #004085;
+}
+
+.status-canceled {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.download-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #eee;
+}
+
+.dark-mode .download-section {
+    border-color: #404040;
+}
+
+.download-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    background-color: #2563eb;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 0.875rem;
+    transition: all 0.3s ease;
+}
+
+.download-btn:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+}
+
+.spinner {
+    width: 40px;
+    height: 40px;
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #2563eb;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+.dark-mode .spinner {
+    border-color: #333333;
+    border-top-color: #2563eb;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Pagination styles for orders */
+.pagination-wrapper {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.pagination {
+    display: flex;
+    gap: 0.5rem;
+    list-style: none;
+    padding: 0;
+}
+
+.pagination li a,
+.pagination li span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    background: #ffffff;
+    color: #2563eb;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.dark-mode .pagination li a,
+.dark-mode .pagination li span {
+    background: #2d2d2d;
+    color: #e5e7eb;
+}
+
+.pagination li.active span {
+    background-color: #2563eb;
+    color: white;
+}
+
+.pagination li a:hover {
+    background-color: #f8f9fa;
+    transform: translateY(-1px);
+}
+
+.dark-mode .pagination li a:hover {
+    background-color: #404040;
+}
+
+/* Alert styles for orders */
+.alert {
+    border-radius: 12px;
+    padding: 1rem 1.5rem;
+    margin-bottom: 1.5rem;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.alert-info {
+    background-color: #e0f2fe;
+    color: #0369a1;
+}
+
+.dark-mode .alert-info {
+    background-color: #0c4a6e;
+    color: #e0f2fe;
+}
+
+/* Responsive styles for orders */
+@media (max-width: 768px) {
+    .transactions {
+        padding: 20px 0;
+    }
+    
+    .card.order-item {
+        margin: 0.5rem;
+    }
+    
+    .transaction-table {
+        font-size: 0.875rem;
+    }
+    
+    .book-thumbnail {
+        width: 60px;
+        height: 90px;
+    }
+    
+    .download-section {
+        flex-direction: column;
+    }
+    
+    .download-btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .card.order-item .card-header {
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: flex-start;
+    }
+    
+    .status-badge {
+        align-self: flex-start;
+    }
+}
+/* Dark mode specific styles for orders */
+.dark-mode .transactions {
+    background-color: #1a1a1a;
+}
+
+.dark-mode .card.order-item {
+    background-color: #2d2d2d;
+    border: 1px solid #404040;
+}
+
+.dark-mode .card-header {
+    background-color: #333;
+    border-bottom: 1px solid #404040;
+    color: #e5e7eb;
+}
+
+.dark-mode .transaction-table {
+    color: #e5e7eb;
+}
+
+.dark-mode .transaction-table th {
+    background-color: #333;
+    color: #e5e7eb;
+    border-bottom: 1px solid #404040;
+}
+
+.dark-mode .transaction-table td {
+    border-bottom: 1px solid #404040;
+}
+
+.dark-mode .transaction-table tr:hover {
+    background-color: #333;
+}
+
+/* Status badges for dark mode */
+.dark-mode .status-badge {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-mode .status-verified {
+    background-color: #065f46;
+    color: #d1fae5;
+}
+
+.dark-mode .status-pending {
+    background-color: #854d0e;
+    color: #fef3c7;
+}
+
+.dark-mode .status-canceled {
+    background-color: #991b1b;
+    color: #fee2e2;
+}
+
+/* Download button for dark mode */
+.dark-mode .download-btn {
+    background-color: #2563eb;
+    color: #fff;
+    border: 1px solid #3b82f6;
+}
+
+.dark-mode .download-btn:hover {
+    background-color: #1d4ed8;
+    border-color: #2563eb;
+}
+
+/* Text colors for dark mode */
+.dark-mode .text-muted {
+    color: #9ca3af !important;
+}
+
+.dark-mode .fw-bold {
+    color: #e5e7eb;
+}
+
+/* Table header colors for dark mode */
+.dark-mode thead th {
+    color: #e5e7eb;
+}
+
+/* Fix table hover in dark mode */
+.dark-mode .transaction-table tbody tr:hover {
+    background-color: #333;
+}
+
+/* Total row styling for dark mode */
+.dark-mode .transaction-table tfoot tr {
+    background-color: #333;
+}
+
+/* Book thumbnail border for dark mode */
+.dark-mode .book-thumbnail {
+    border: 1px solid #404040;
+}
+
+/* Dark mode improvements */
+.dark-mode .transactions {
+    background-color: #1a1a1a;
+    color: #e5e7eb;
+}
+
+.dark-mode .card.order-item {
+    background-color: #2d2d2d;
+    border: 1px solid #404040;
+}
+
+.dark-mode .card-header {
+    background-color: #333;
+    border-bottom: 1px solid #404040;
+    color: #e5e7eb;
+}
+
+.dark-mode .text-muted {
+    color: #9ca3af !important;
+}
+
+/* Dark Mode Table Styles */
+.dark-mode .transaction-table {
+    color: #e5e7eb;
+    background-color: #2d2d2d;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.dark-mode .transaction-table th {
+    background-color: #333;
+    color: #e5e7eb;
+    border-bottom: 1px solid #404040;
+    padding: 1rem;
+}
+
+.dark-mode .transaction-table td {
+    border-bottom: 1px solid #404040;
+    padding: 1rem;
+    color: #e5e7eb;
+}
+
+/* Table row hover effect */
+.dark-mode .transaction-table tbody tr {
+    transition: background-color 0.2s ease;
+}
+
+.dark-mode .transaction-table tbody tr:hover {
+    background-color: #3d3d3d;
+}
+
+/* Book thumbnail in dark mode */
+.dark-mode .book-thumbnail {
+    border: 1px solid #404040;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease;
+}
+
+.dark-mode .book-thumbnail:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Table header and cells alignment */
+.dark-mode .transaction-table th.text-center,
+.dark-mode .transaction-table td.text-center {
+    text-align: center;
+}
+
+.dark-mode .transaction-table th.text-end,
+.dark-mode .transaction-table td.text-end {
+    text-align: right;
+}
+
+/* Footer total row */
+.dark-mode .transaction-table tfoot tr {
+    background-color: #333;
+}
+
+.dark-mode .transaction-table tfoot td {
+    color: #e5e7eb;
+    font-weight: 600;
+}
+
+/* Book details */
+.dark-mode .transaction-table td:nth-child(2),
+.dark-mode .transaction-table td:nth-child(3) {
+    color: #e5e7eb;
+}
+
+/* Price column */
+.dark-mode .transaction-table td:last-child {
+    color: #e5e7eb;
+    font-weight: 500;
+}
+
+/* Quantity column */
+.dark-mode .transaction-table td:nth-child(4) {
+    color: #e5e7eb;
+    font-weight: 500;
+}
+
+/* Add smooth transition for all elements */
+.dark-mode .transaction-table *,
+.dark-mode .book-thumbnail {
+    transition: all 0.2s ease;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .dark-mode .transaction-table {
+        font-size: 0.875rem;
+    }
+    
+    .dark-mode .transaction-table th,
+    .dark-mode .transaction-table td {
+        padding: 0.75rem;
+    }
+    
+    .dark-mode .book-thumbnail {
+        width: 60px;
+        height: 90px;
+    }
+}
+/* Orders Title Styling */
+.orders-title {
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #1a1a1a; /* Dark text for light mode */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+.dark-mode .orders-title {
+    color: #e5e7eb; /* Light text for dark mode */
+}
